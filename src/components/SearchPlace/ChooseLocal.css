@@ -1,0 +1,23 @@
+.search-input{
+  border: none;
+  outline: none;
+  padding: 8px 14px;
+  background-color: rgba(71, 147, 255, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.z{
+  z-index: 9999;
+}
+.search-button{
+  background-color: rgb(122, 122, 255);
+  width: 100px;
+  height: 35px;
+  font-size: 20px;
+  border:none ;
+  border-radius: 8px;
+}

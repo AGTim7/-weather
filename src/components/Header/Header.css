@@ -1,0 +1,15 @@
+header{
+  display: flex;
+  justify-content: space-between;
+}
+header div{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+header div h1{
+  font-weight: bold;
+}
+header div select{
+  height: 37px;
+}
