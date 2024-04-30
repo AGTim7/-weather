@@ -12,9 +12,9 @@ export default function ThisDayInfo(){
 
   if(!getWeatherData.loading){
 
-    const temp_c = getWeatherData.res.current.temp_c
+    const tempC = getWeatherData.res.current.temp_c
 
-    const feelslike_c = getWeatherData.res.current.feelslike_c
+    const feelslikeC = getWeatherData.res.current.feelslike_c
 
     const pressure = Math.floor(getWeatherData.res.current.pressure_mb/1013.2427*760)
 
@@ -30,7 +30,7 @@ export default function ThisDayInfo(){
       precip = getWeatherData.res.current.precip_mm + ' мм'
     }
     
-    const direction_ru = {
+    const directionRu = {
       'N': 'север',
       'NNE': 'северо-восток',
       'NE': 'северо-восток',
@@ -48,49 +48,49 @@ export default function ThisDayInfo(){
       'NW': 'северо-запад',
       'NNW': 'северо-запад'
     }
-    const wind_v = getWeatherData.res.current.wind_mph
-    let wind_pow = 'умеренный'
-    if(wind_v < 4){
-      wind_pow = 'легкий'
-    }else if(wind_v > 7){
-      wind_pow = 'сильный'
+    const windV = getWeatherData.res.current.wind_mph
+    let windPow = 'умеренный'
+    if(windV < 4){
+      windPow = 'легкий'
+    }else if(windV > 7){
+      windPow = 'сильный'
     }
-    const direction_en = getWeatherData.res.current.wind_dir
-    const wind_dir = direction_ru[direction_en]
-    const windInfo = wind_v  + ' м/с ' + wind_dir + ' - ' + wind_pow
+    const directionEn = getWeatherData.res.current.wind_dir
+    const windDir = directionRu[directionEn]
+    const windInfo = windV  + ' м/с ' + windDir + ' - ' + windPow
 
 
   return(
-    <div className='this-day-info'>
-      <div className='this-info'>
-        <div className='this-info__icon'>
+    <div className='now-info-widget'>
+      <div className='now-info'>
+        <div className='now-info__icon'>
           <WeatherInfoIcon id='temperature'/>
         </div>
-        <span className='this-info__name'>Температура</span>
-        <span className='this-info__value'>{temp_c}° - ощущается как {feelslike_c}°</span>
+        <span className='now-info__name'>Температура</span>
+        <span className='now-info__value'>{tempC}° - ощущается как {feelslikeC}°</span>
       </div>
-      <div className='this-info'>
-        <div className='this-info__icon'>
-          <WeatherInfoIcon className='this-info__icon' id='pressure'/>
+      <div className='now-info'>
+        <div className='now-info__icon'>
+          <WeatherInfoIcon className='now-info__icon' id='pressure'/>
         </div>
-        <span className='this-info__name'>Давление</span>
-        <span className='this-info__value'>{pressure} мм ртутного столба - {pressureState}</span>
+        <span className='now-info__name'>Давление</span>
+        <span className='now-info__value'>{pressure} мм ртутного столба - {pressureState}</span>
       </div>
-      <div className='this-info'>
-        <div className='this-info__icon'>
+      <div className='now-info'>
+        <div className='now-info__icon'>
           <WeatherInfoIcon className='this-info__icon' id='precipitation'/>
         </div>
-        <span className='this-info__name'>Осадки</span>
-        <span className='this-info__value'>{precip}</span>
+        <span className='now-info__name'>Осадки</span>
+        <span className='now-info__value'>{precip}</span>
       </div>
-      <div className='this-info'>
-        <div className='this-info__icon'>
+      <div className='now-info'>
+        <div className='now-info__icon'>
           <WeatherInfoIcon className='this-info__icon' id='wind'/>
         </div>
-        <span className='this-info__name'>Ветер</span>
-        <span className='this-info__value'>{windInfo}</span>
+        <span className='now-info__name'>Ветер</span>
+        <span className='now-info__value'>{windInfo}</span>
       </div>
-      <img className='this-day-info__image' src={cloud} alt="cloud" />
+      <img className='now-info__image' src={cloud} alt="cloud" />
     </div>
   )
 }

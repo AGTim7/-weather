@@ -4,9 +4,8 @@ import WeatherAxios from './axios/index'
 import Header from './components/Header/Header.jsx'
 import NowWidget from './components/ThisDay/NowWidget/NowWidget.jsx';
 import NowInfo from './components/ThisDay/NowInfo/NowInfo.jsx'
-import TodayCards from './components/ChangeTime/Cards/TodayCards/TodayCards';
-import './index.css'
-
+import TodayCards from './components/ChangeTime/TodayCards/TodayCards';
+import'./index.css'
 
 function App() {
 WeatherAxios()
@@ -14,7 +13,7 @@ WeatherAxios()
   return (
     <div className='container'>
       <Header/>
-      <div className='this-day'>
+      <div className='day-info-container'>
           <NowWidget/>
           <NowInfo/>
       </div>

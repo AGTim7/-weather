@@ -28,14 +28,14 @@ export default function ThisDayWidget(){
   const timeString = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
   // nowInfo
   return(
-    <div className='widget'>
-      <div className='this-day__info'>
-        <span className='this-day__today'>Сейчас</span>
-        <span className='this-day__temp'>{getWeatherData.res.current.temp_c}°</span>
-        <span className='this-day__time'>Время: {timeString}</span>
-        <span className='this-day__city'>{getWeatherData.res.location.name}</span>
+    <div className='now-widget'>
+      <div className='now-widget-info'>
+        <span className='now__text'>Сейчас</span>
+        <span className='now__temp'>{getWeatherData.res.current.temp_c}°</span>
+        <span className='now__time'>Время: {timeString}</span>
+        <span className='now__city'>{getWeatherData.res.location.name}</span>
       </div>
-      <img className='widget-icon' src={getWeatherData.res.current.condition.icon} alt="icon" />
+      <img className='now-widget__icon' src={getWeatherData.res.current.condition.icon} alt="icon" />
     </div>
   )
 }

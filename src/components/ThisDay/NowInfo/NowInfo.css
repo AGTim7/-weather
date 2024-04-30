@@ -1,4 +1,4 @@
-.this-day-info{
+.now-info-widget{
   min-width: 750px;
   position: relative;
   display: flex;
@@ -7,14 +7,14 @@
   box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
   border-radius: 20px;
 }
-.this-info{
+.now-info{
   display: flex;
   align-items: center;
   gap: 20px;
   margin-left: 32px;
   z-index: 100;
 }
-.this-info__icon{
+.now-info__icon{
   width: 38px;
     height: 38px;
     display: flex;
@@ -24,14 +24,14 @@
     box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
     border-radius: 50%;
 }
-.this-info__name{
+.now-info__name{
   color: #939CB0;
   font-size: 14px;
 }
-.this-info__value{
+.now-info__value{
   font-size: 14px;
 }
-.this-day-info__image{
+.now-info__image{
   position: absolute;
   top: 0;
   right: 0;

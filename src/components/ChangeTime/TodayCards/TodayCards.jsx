@@ -1,6 +1,6 @@
 import React from 'react'
 import { useAtom } from 'jotai';
-import { nowWeatherAtom } from '../../../../atom';
+import { nowWeatherAtom } from '../../../atom';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import './TodayCards.css'

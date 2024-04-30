@@ -1,38 +1,38 @@
-.widget{
+.now-widget{
   position: relative;
   display: flex;
   width: 400px;
   border-radius: 20px;
   box-shadow: 2px 5px 25px 0 rgba(180, 180, 180, 0.25);
 }
-.this-day__info{
+.now-widget-info{
   display: flex;
   flex-direction: column;
   width: 240px;
   margin-left: 20px;
 }
-.this-day__temp{
+.now__temp{
   color: #4793FF;
   font-size: 96px;
   font-weight: 500;
 }
-.this-day__today{
+.now__text{
   margin-top: 14px;
   font-size: 40px;
 }
-.this-day__time{
+.now__time{
   color: #939CB0;
   font-size: 25px;
   margin-top: 12px;
 }
-.this-day__city{
+.now__city{
   color: #939CB0;
   white-space: nowrap;
   font-size: 25px;
   margin-top: 14px;
   margin-bottom: 10px;
 }
-.widget-icon{
+.now-widget__icon{
   width: 120px;
   height: 120px;
   margin-top: 32px;

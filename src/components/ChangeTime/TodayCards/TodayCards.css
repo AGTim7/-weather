@@ -1,0 +1,14 @@
+.today-cards{
+  margin-top: 50px;
+}
+.slider{
+  box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+  border-radius: 0 0 20px 20px;
+  padding: 10px 0 20px 19px;
+  margin-top: 10px;
+  height: 200px;
+}
+.slide{
+  display: flex;
+  justify-tracks: center;
+}

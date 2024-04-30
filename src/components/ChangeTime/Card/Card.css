@@ -11,32 +11,23 @@
   justify-content: space-evenly;
   border-radius: 10px;
 }
-.card-today-period{
-  display: flex;
-  gap: 10px;
-}
-.card-today-day{
-  font-size: 24px;
-  font-weight: 400;
-  color: #939CB0;
-}
-.card-today-time{
+.card-time{
   font-weight: 500;
   font-size: 24px;
 }
-.card-today-temp{
+.card-temp{
   font-weight: 500;
   font-size: 18px;
 }
-.card-today-precip{
+.card-precip{
   font-size: 14px;
 }
-.card-today-weather{
+.card-weather{
   display: contents;
   font-size: 12px;
   color: #939CB0;
 }
-.sun{
+.card-icon{
   width: 48px;
   height: 48px;
 }
